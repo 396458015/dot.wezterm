@@ -23,8 +23,10 @@
 - 支持背景gif动图
 
 ### 缺点
+- 不能显示lf和lazygit内的中文
 - 键盘输入略有延迟
 - 占用内存较高
+- 设置相对较为复杂，配置代码为lua，较为灵活
 
 ![screenshot](./screenshots/screenshot-2.png)
 
