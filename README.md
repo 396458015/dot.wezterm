@@ -14,6 +14,18 @@
 
   - 配置文件Powershell快捷命令: 'weconfig'.  
 
+### 优点
+- 美观,顶部可以设置显示各种信息，电量，日期，天气等
+- 可设置的颗粒度细
+- 中文字体渲染好看
+- 有且唯一支持nvim<C-space>快捷键的终端，快捷键设置丰富
+- 可以预览图片
+- 支持背景gif动图
+
+### 缺点
+- 键盘输入略有延迟
+- 占用内存较高
+
 ![screenshot](./screenshots/screenshot-2.png)
 
 ### References/Links
