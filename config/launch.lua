@@ -7,7 +7,7 @@ local options = {
 
 if platform.is_win then
    -- options.default_prog = { 'powershell' }
-   options.default_prog = { 'C:\\Program Files\\PowerShell\\7-preview\\pwsh.exe' }
+   options.default_prog = { 'C:\\Program Files\\PowerShell\\7\\pwsh.exe' }
    options.launch_menu = {
       { label = 'Git Bash', args = { 'D:\\Program Files\\Git\\bin\\bash.exe' } },
       { label = 'CMD', args = { 'cmd' } },
