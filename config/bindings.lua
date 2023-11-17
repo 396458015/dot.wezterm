@@ -15,6 +15,15 @@ local smart_split = wezterm.action_callback(function(window, pane)
   end
 end)
 
+
+local toggleBlur = wezterm.action_callback(function(window)
+    if window:effective_config().window_background_opacity == 1 then
+        window:set_config_overrides({ window_background_opacity = 0.75, win32_system_backdrop = "Acrylic" })
+    else
+        window:set_config_overrides({ window_background_opacity = 1, win32_system_backdrop = "None" })
+    end
+end)
+
 local keys = {
    -- <C-Space>
    { key = ' ', mods = 'CTRL', action = act.SendKey({ key = ' ', mods = 'CTRL' }) },
@@ -75,6 +84,10 @@ local keys = {
    { key = 'DownArrow', mods = mod.CS, action = act.AdjustPaneSize { 'Down', 3 }, },
    { key = 'UpArrow', mods = mod.CS, action = act.AdjustPaneSize { 'Up', 3 } },
    { key = 'RightArrow', mods = mod.CS, action = act.AdjustPaneSize { 'Right', 3 }, },
+
+   { key = "F11", mods = "ALT", action = toggleBlur },
+
+
 }
 
 local mouse_bindings = {

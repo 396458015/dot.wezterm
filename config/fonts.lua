@@ -1,8 +1,11 @@
 local wezterm = require('wezterm')
 local platform = require('utils.platform')
 
-local font = {'Delugia Mono','inconsolatago qihei nf'}
--- local font_size = platform().is_mac and 12 or 9
+local font = {
+             { family = 'Delugia Mono', weight = 'Regular' },
+             "inconsolatago qihei nf",
+             }
+
 local font_size = 12
 
 return {
