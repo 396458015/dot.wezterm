@@ -1,9 +1,33 @@
 -- chose colorcheme
-local theme = "latte" -- light
--- local theme = "mocha" -- dark
+local theme = "catppucchin_latte" -- light
+-- local theme = "catppucchin_mocha" -- dark
 
-local colors = require('colors.catppucchin_' .. theme)
+local colors = require('colors.' .. theme)
+local light_theme_list= {
+    "catppucchin_latte",
+    "some colorcheme",
+}
+
 local wezterm = require('wezterm')
+
+local function setupTheme()
+    for _, value in ipairs(light_theme_list) do
+        if theme == value then
+            require('events.tab-title-light').setup()
+            require('events.right-status-light').setup()
+            return {
+                color_scheme = 'Catppuccin Latte',
+                opacity = 0.95,
+            }
+        end
+    end
+    require('events.tab-title-dark').setup()
+    require('events.right-status-dark').setup()
+    return {
+        color_scheme = 'Catppuccin Mocha',
+        opacity = 0.90,
+    }
+end
 
 -- random background
 local random_pic = {
@@ -15,24 +39,6 @@ local random_pic = {
     '/backdrops/voyage.jpg',
 }
 local pic = math.random(1, #random_pic)
-
-local function setupTheme()
-    if theme == 'latte' then
-        require('events.tab-title-light').setup()
-        require('events.right-status-light').setup()
-        return {
-            color_scheme = 'Catppuccin Latte',
-            opacity = 0.95,
-        }
-    else
-        require('events.tab-title-dark').setup()
-        require('events.right-status-dark').setup()
-        return {
-            color_scheme = 'Catppuccin Mocha',
-            opacity = 0.90,
-        }
-    end
-end
 
 return {
     color_scheme = setupTheme().color_scheme,
@@ -62,14 +68,14 @@ return {
 
     background = {
         {
--- img 
+            -- img 
             -- source = { File = { path = wezterm.config_dir .. '/backdrops/smoke.gif', speed = 0.2} },
             -- source = { File = { path = "C:/Users/ThinkPad/.config/wezterm/backdrops/smoke.gif",speed = 0.2} },
             -- source = { File = { path = "C:/Users/ThinkPad/.config/wezterm/backdrops/man.gif",speed = 0.2} },
             -- source = { File = { path = "C:/Users/ThinkPad/.config/wezterm/backdrops/nasa.gif",speed = 0.2} },
             -- source = { File = { path = wezterm.config_dir .. random_pic[pic] } },
-            
--- pure color
+
+            -- pure color
             source = { Color = 'black' },
         },
         {
