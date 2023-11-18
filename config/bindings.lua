@@ -37,8 +37,8 @@ local keys = {
    -- scroll (mod.CA和PowerToys冲突)
    -- { key = "PageUp", mods = mod.CS, action = act.ScrollByPage(-0.5) },
    -- { key = "PageDown", mods = mod.CS, action = act.ScrollByPage(0.5) },
-   { key = "k", mods = mod.CS, action = act.ScrollByPage(-0.2) },
-   { key = "j", mods = mod.CS, action = act.ScrollByPage(0.2) },
+   { key = "i", mods = mod.CS, action = act.ScrollByPage(-0.2) },
+   { key = "u", mods = mod.CS, action = act.ScrollByPage(0.2) },
 
    -- creat tab
    { key="t", mods=mod.CS, action=wezterm.action{SpawnTab="CurrentPaneDomain"}},
@@ -63,8 +63,8 @@ local keys = {
    -- { key = [[\]], mods = 'ALT', action = act.SplitVertical({domain = 'CurrentPaneDomain'}) },
 
    -- panes: navigation
-   -- { key = 'k', mods = mod.CS, action = act.ActivatePaneDirection('Up') },
-   -- { key = 'j', mods = mod.CS, action = act.ActivatePaneDirection('Down') },
+   { key = 'k', mods = mod.CS, action = act.ActivatePaneDirection('Up') },
+   { key = 'j', mods = mod.CS, action = act.ActivatePaneDirection('Down') },
    { key = 'h', mods = mod.CS, action = act.ActivatePaneDirection('Left') },
    { key = 'l', mods = mod.CS, action = act.ActivatePaneDirection('Right') },
 
