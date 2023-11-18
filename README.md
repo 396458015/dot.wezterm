@@ -19,8 +19,10 @@
 - 可设置的颗粒度细
 - 中文字体渲染好看
 - 有且唯一支持nvim<C-space>快捷键的终端，快捷键设置丰富
-- 可以预览图片
 - 支持背景gif动图
+- 预览图片
+- 支持nvim
+  neo-tree预览图片,通过'https://github.com/adelarsq/image_preview.nvim'插件,快捷键v
 
 ### 缺点
 - 不能显示lf和lazygit内的中文
