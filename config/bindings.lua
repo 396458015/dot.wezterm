@@ -35,10 +35,10 @@ local keys = {
    { key = 'Backspace', mods = "ALT", action = act.ResetFontSize },
 
    -- scroll (mod.CA和PowerToys冲突)
-   --[[ { key = "k", mods = mod.CA, action = act.ScrollByPage(-0.5) },
-   { key = "j", mods = mod.CA, action = act.ScrollByPage(0.5) }, ]]
-   { key = "PageUp", mods = mod.CS, action = act.ScrollByPage(-0.5) },
-   { key = "PageDown", mods = mod.CS, action = act.ScrollByPage(0.5) },
+   -- { key = "PageUp", mods = mod.CS, action = act.ScrollByPage(-0.5) },
+   -- { key = "PageDown", mods = mod.CS, action = act.ScrollByPage(0.5) },
+   { key = "k", mods = mod.CS, action = act.ScrollByPage(-0.2) },
+   { key = "j", mods = mod.CS, action = act.ScrollByPage(0.2) },
 
    -- creat tab
    { key="t", mods=mod.CS, action=wezterm.action{SpawnTab="CurrentPaneDomain"}},
@@ -63,18 +63,18 @@ local keys = {
    -- { key = [[\]], mods = 'ALT', action = act.SplitVertical({domain = 'CurrentPaneDomain'}) },
 
    -- panes: navigation
-   { key = 'k', mods = mod.CS, action = act.ActivatePaneDirection('Up') },
-   { key = 'j', mods = mod.CS, action = act.ActivatePaneDirection('Down') },
+   -- { key = 'k', mods = mod.CS, action = act.ActivatePaneDirection('Up') },
+   -- { key = 'j', mods = mod.CS, action = act.ActivatePaneDirection('Down') },
    { key = 'h', mods = mod.CS, action = act.ActivatePaneDirection('Left') },
    { key = 'l', mods = mod.CS, action = act.ActivatePaneDirection('Right') },
 
    { key = "R", mods = mod.CS, action = wezterm.action.RotatePanes("Clockwise") },
 
    -- panes: size
-   { key = 'LeftArrow', mods = mod.CS, action = act.AdjustPaneSize { 'Left', 3 }, },
-   { key = 'DownArrow', mods = mod.CS, action = act.AdjustPaneSize { 'Down', 3 }, },
-   { key = 'UpArrow', mods = mod.CS, action = act.AdjustPaneSize { 'Up', 3 } },
-   { key = 'RightArrow', mods = mod.CS, action = act.AdjustPaneSize { 'Right', 3 }, },
+   { key = 'LeftArrow', mods = "ALT", action = act.AdjustPaneSize { 'Left', 3 }, },
+   { key = 'DownArrow', mods = "ALT", action = act.AdjustPaneSize { 'Down', 3 }, },
+   { key = 'UpArrow', mods = "ALT", action = act.AdjustPaneSize { 'Up', 3 } },
+   { key = 'RightArrow', mods = "ALT", action = act.AdjustPaneSize { 'Right', 3 }, },
 
 }
 
