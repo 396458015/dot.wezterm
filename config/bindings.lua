@@ -76,6 +76,12 @@ local keys = {
    { key = 'UpArrow', mods = "ALT", action = act.AdjustPaneSize { 'Up', 3 } },
    { key = 'RightArrow', mods = "ALT", action = act.AdjustPaneSize { 'Right', 3 }, },
 
+   -- move alt:h,j,k,l
+   { key="h", mods="ALT", action=wezterm.action{ SendString="\x1b[D" } },
+   { key="j", mods="ALT", action=wezterm.action{ SendString="\x1b[B" } },
+   { key="k", mods="ALT", action=wezterm.action{ SendString="\x1b[A" } },
+   { key="l", mods="ALT", action=wezterm.action{ SendString="\x1b[C" } },
+
 }
 
 local mouse_bindings = {
