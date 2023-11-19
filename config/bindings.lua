@@ -30,9 +30,9 @@ local keys = {
    { key = 'p', mods = mod.CS, action = act.PasteFrom('Clipboard') },
 
    -- fontsize
-   { key = "=", mods = "ALT", action = act.IncreaseFontSize },
-   { key = "-", mods = "ALT", action = act.DecreaseFontSize },
-   { key = 'Backspace', mods = "ALT", action = act.ResetFontSize },
+   { key = "=", mods = "CTRL", action = act.IncreaseFontSize },
+   { key = "-", mods = "CTRL", action = act.DecreaseFontSize },
+   { key = '0', mods = "CTRL", action = act.ResetFontSize },
 
    -- scroll (mod.CA和PowerToys冲突)
    -- { key = "PageUp", mods = mod.CS, action = act.ScrollByPage(-0.5) },
