@@ -3,10 +3,12 @@ local platform = require('utils.platform')
 
 local font = {
              { family = 'Delugia Mono', weight = 'Regular' },
-             "inconsolatago qihei nf",
+             -- "Noto Sans Mono CJK SC",
+             "LXGW WenKai Mono",
+             -- "inconsolatago qihei nf",
              }
 
-local font_size = 12
+local font_size = 14
 
 return {
    font = wezterm.font_with_fallback(font),

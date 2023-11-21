@@ -41,7 +41,7 @@ local keys = {
    { key = "u", mods = mod.CS, action = act.ScrollByPage(0.2) },
 
    -- creat tab
-   { key="t", mods=mod.CS, action=wezterm.action{SpawnTab="CurrentPaneDomain"}},
+   { key="n", mods=mod.CS, action=wezterm.action{SpawnTab="CurrentPaneDomain"}},
 
    -- search
    { key = "f", mods = mod.CS , action = act.Search("CurrentSelectionOrEmptyString") },

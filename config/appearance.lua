@@ -1,6 +1,6 @@
 -- chose colorcheme
-local theme = "catppucchin_latte" -- light
--- local theme = "catppucchin_mocha" -- dark
+-- local theme = "catppucchin_latte" -- light
+local theme = "catppucchin_mocha" -- dark
 
 local colors = require('colors.' .. theme)
 local light_theme_list= {
@@ -25,7 +25,7 @@ local function setupTheme()
     require('events.right-status-dark').setup()
     return {
         color_scheme = 'Catppuccin Mocha',
-        opacity = 0.90,
+        opacity = 0.97,
     }
 end
 
