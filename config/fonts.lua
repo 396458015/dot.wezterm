@@ -3,9 +3,9 @@ local platform = require('utils.platform')
 
 local font = {
              { family = 'Delugia Mono', weight = 'Regular' },
-             -- "Noto Sans Mono CJK SC",
-             "LXGW WenKai Mono",
+             "Noto Sans Mono CJK SC",
              -- "inconsolatago qihei nf",
+             -- "LXGW WenKai Mono",
              }
 
 local font_size = 14
