@@ -8,7 +8,7 @@ local font = {
              -- "LXGW WenKai Mono",
              }
 
-local font_size = 14
+local font_size = 13
 
 return {
    font = wezterm.font_with_fallback(font),
