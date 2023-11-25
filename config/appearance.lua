@@ -1,3 +1,4 @@
+-- WezTerm Main configuration
 local Darkness = 1    -- 1: darkness, others: lightness
 local BG_pic   = 0    -- 0: without pic, others: pic
 local Screen_width_ratio  = 0.80
