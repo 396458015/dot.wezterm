@@ -1,5 +1,7 @@
 local Darkness = 1 -- 1: darkness, others: lightness
 local BG_pic = 0  -- 0: without pic, others: pic
+local Screen_width_ratio = 0.8
+local Screen_height_ratio = 0.75
 
 local theme = Darkness == 1 and "catppucchin_mocha" or "catppucchin_latte"
 local colors = require('colors.' .. theme)
@@ -99,8 +101,8 @@ wezterm.on("gui-startup", function(cmd)
     local screen = wezterm.gui.screens().active
     local tab, pane, window = wezterm.mux.spawn_window(cmd or {})
     local gui = window:gui_window()
-    local width = 0.8 * screen.width
-    local height = 0.75 * screen.height
+    local width = Screen_width_ratio * screen.width
+    local height = Screen_height_ratio * screen.height
     gui:set_inner_size(width, height)
     gui:set_position((screen.width - width) / 2, (screen.height - height) / 4)
 end)
