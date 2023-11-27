@@ -2,12 +2,13 @@ local wezterm = require('wezterm')
 local math = require('utils.math')
 local M = {}
 
-M.separator_char = ' '
+-- M.separator_char = ' '
+M.separator_char = ' '
 
 M.colors = {
    date_fg = '#1e66f5',
    date_bg = '#dce0e8',
-   battery_fg = '#d20f39',
+   battery_fg = '#139948', -- #f9e2af
    battery_bg = '#dce0e8',
    separator_fg = '#74c7ec',
    separator_bg = '#dce0e8',

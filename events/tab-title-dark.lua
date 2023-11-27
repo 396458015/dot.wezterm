@@ -10,7 +10,7 @@ M.cells = {}
 
 M.colors = {
    default = {
-      bg = "#45475a",
+      bg = "#006039", -- #45475a
       fg = "#1c1b19",
    },
    is_active = {
@@ -19,7 +19,7 @@ M.colors = {
    },
 
    hover = {
-      bg = "#587d8c",
+      bg = "#00ad65", -- #587d8c
       fg = "#1c1b19",
    },
 }
@@ -29,14 +29,22 @@ M.set_process_name = function(s)
    return a:gsub("%.exe$", "")
 end
 
-M.set_title = function(process_name, base_title, max_width, inset)
+-- M.set_title = function(process_name, base_title, max_width, inset)
+M.set_title = function(process_name, static_title, active_title, max_width, inset)
    local title
    inset = inset or 6
 
-   if process_name:len() > 0 then
-      title = process_name .. " ~ " .. base_title
+--   if process_name:len() > 0 then
+--      title = process_name .. " ~ " .. base_title
+--   else
+--      title = base_title
+--   end
+   if process_name:len() > 0 and static_title:len() == 0 then
+      title = process_name .. " ~ " .. " "
+   elseif static_title:len() > 0 then
+      title = static_title .. " ~ " .. " "
    else
-      title = base_title
+      title = active_title .. " ㉿ " .. " "
    end
 
    if title:len() > max_width - inset then
@@ -73,7 +81,8 @@ M.setup = function()
       local fg
       local process_name = M.set_process_name(tab.active_pane.foreground_process_name)
       local is_admin = M.check_if_admin(tab.active_pane.title)
-      local title = M.set_title(process_name, tab.active_pane.title, max_width, (is_admin and 8))
+      -- local title = M.set_title(process_name, tab.active_pane.title, max_width, (is_admin and 8))
+      local title = M.set_title(process_name, tab.tab_title, tab.active_pane.title, max_width, (is_admin and 8))
 
       if tab.is_active then
          bg = M.colors.is_active.bg
