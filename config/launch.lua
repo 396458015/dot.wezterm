@@ -13,7 +13,7 @@ if platform.is_win then
       { label = 'CMD', args = { 'cmd' } },
       { label = 'PowerShell', args = { 'powershell' } },
       { label = 'pwsh7', args = { 'C:\\Program Files\\PowerShell\\7-preview\\pwsh.exe' } },
-      -- { label = 'Nushell', args = { 'nu' } },
+      -- { label = 'Nushell', args = { 'E:\\Cache\\ChromeDownload\\nu-0.87.1-x86_64-windows-msvc-full\\nu.exe' } },
    }
 elseif platform.is_mac then
    options.default_prog = { '/opt/homebrew/bin/fish' }
