@@ -19,13 +19,13 @@ M.colors = {
       fg = "#dce0e8",
    },
    is_active = {
-      bg = "#e43542",
+      bg = "#4e49ee",
       fg = "#dce0e8",
    },
 
    hover = {
-      bg = "#587d8c",
-      fg = "#1c1b19",
+      bg = "#89b4fa",
+      fg = "#dce0e8",
    },
 }
 
