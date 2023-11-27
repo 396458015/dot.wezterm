@@ -135,6 +135,30 @@ local mouse_bindings = {
       mods = 'NONE',
       action = 	act.PasteFrom("Clipboard"),
    },
+   -- Scrolling screen
+   {
+     event = { Down = { streak = 1, button = { WheelUp = 1 } } },
+     mods = 'NONE',
+     action = act.ScrollByPage(-0.05),
+   },
+   {
+     event = { Down = { streak = 1, button = { WheelDown = 1 } } },
+     mods = 'NONE',
+     action = act.ScrollByPage(0.05),
+   },
+   -- Scrolling up while holding CTRL increases the font size
+   {
+     event = { Down = { streak = 1, button = { WheelUp = 1 } } },
+     mods = 'CTRL',
+     action = act.IncreaseFontSize,
+   },
+
+   -- Scrolling down while holding CTRL decreases the font size
+   {
+     event = { Down = { streak = 1, button = { WheelDown = 1 } } },
+     mods = 'CTRL',
+     action = act.DecreaseFontSize,
+   },
 
 }
 
