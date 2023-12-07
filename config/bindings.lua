@@ -27,7 +27,7 @@ local keys = {
 
    -- copy/paste
    { key = 'c', mods = mod.CS, action = act.CopyTo('Clipboard') },
-   { key = 'p', mods = mod.CS, action = act.PasteFrom('Clipboard') },
+   { key = 'v', mods = mod.CS, action = act.PasteFrom('Clipboard') },
 
    -- fontsize
    { key = "=", mods = "CTRL", action = act.IncreaseFontSize },
