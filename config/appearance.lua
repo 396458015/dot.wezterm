@@ -80,6 +80,7 @@ else
         '/backdrops/punk.jpg',
         '/backdrops/space.jpg',
         '/backdrops/voyage.jpg',
+        '/backdrops/5-cm.jpg',
     }
     local pic = math.random(1, #random_pic)
 
