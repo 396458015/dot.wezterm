@@ -64,6 +64,7 @@ local config = {
     enable_scroll_bar = false,
     window_padding = { left = 2, right = 2, top = 2, bottom = 2 },
     window_close_confirmation = 'NeverPrompt',
+    hide_mouse_cursor_when_typing = true,
     window_frame = {
         active_titlebar_bg = '#090909',
     },
