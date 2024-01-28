@@ -48,13 +48,20 @@ local config = {
     animation_fps = 60,
     max_fps = 60,
     front_end = 'WebGpu',
-    webgpu_power_preference = 'HighPerformance',
-    enable_tab_bar = true,
+    webgpu_power_preference = 'LowPower',  -- use an integrated GPU
+    -- webgpu_power_preference = 'HighPerformance',  -- use a discrete GPU
+
+    -- 不显示tab栏 (false, 包含tab button,date tiem, batter)
+    enable_tab_bar = false,
+    -- 仅不显示tab button (all false)
+    show_tab_index_in_tab_bar = true,
+    show_tabs_in_tab_bar = true,
+    show_new_tab_button_in_tab_bar = true,
+
     tab_bar_at_bottom = true,
     hide_tab_bar_if_only_one_tab = false,
     use_fancy_tab_bar = false,
     tab_max_width = 25,
-    show_tab_index_in_tab_bar = false,
     switch_to_last_active_tab_when_closing_tab = true,
     window_decorations = "INTEGRATED_BUTTONS|RESIZE",
     integrated_title_button_alignment = "Right",
