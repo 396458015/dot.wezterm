@@ -57,8 +57,9 @@ local config = {
     show_tab_index_in_tab_bar = true,
     show_tabs_in_tab_bar = true,
     show_new_tab_button_in_tab_bar = true,
-
+    -- tab栏位置
     tab_bar_at_bottom = true,
+
     hide_tab_bar_if_only_one_tab = false,
     use_fancy_tab_bar = false,
     tab_max_width = 25,
