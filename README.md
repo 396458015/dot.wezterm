@@ -8,6 +8,11 @@
                        directory-background-shell
                        directory-shell
                        drive-shell
+
+                       "计算机\HKEY_CLASSES_ROOT\Directory\Background\shell"
+                       "计算机\HKEY_CLASSES_ROOT\Directory\shell"
+                       "计算机\HKEY_CLASSES_ROOT\Drive\shell"
+
       - 新建项'Open WezTerm Here'
       - 新建字符串值，修改字符串值名称为Icon,值为'D:\Program Files\WezTerm\wezterm-gui.exe'
       - 修改'command'中字符串值为'D:\Program Files\WezTerm\wezterm-gui.exe start --no-auto-connect --cwd %V'
