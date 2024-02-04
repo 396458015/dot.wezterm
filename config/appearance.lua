@@ -52,12 +52,12 @@ local config = {
     -- webgpu_power_preference = 'HighPerformance',  -- use a discrete GPU
 
     -- 不显示tab栏 (false, 包含tab button,date tiem, batter)
-    enable_tab_bar = false,
+    enable_tab_bar = true,
     -- 仅不显示tab button (all false)
     show_tab_index_in_tab_bar = true,
     show_tabs_in_tab_bar = true,
     show_new_tab_button_in_tab_bar = true,
-    -- tab栏位置
+    -- tab栏在底部
     tab_bar_at_bottom = true,
 
     hide_tab_bar_if_only_one_tab = false,
