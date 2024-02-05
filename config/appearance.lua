@@ -11,6 +11,17 @@ local theme = Darkness == 1 and "catppucchin_mocha" or "catppucchin_latte"
 local colors = require('colors.' .. theme)
 local wezterm = require('wezterm')
 
+-- 修改深色主题对应的颜色
+if Darkness == 1 then
+    -- 光标
+    colors.cursor_bg = "#abb2bf"
+    colors.cursor_fg = "#303446"
+    -- tab_bar底色
+    colors.tab_bar.background = "#1e1e2e"
+    -- 背景底色
+    -- colors.background = "#1f1f28"
+end
+
 local function setupTheme()
     local light_theme_list = {
         "catppucchin_latte",
@@ -78,6 +89,7 @@ local config = {
         active_titlebar_bg = '#090909',
     },
     inactive_pane_hsb = { saturation = 1.0, brightness = 1.0 },
+    colors = colors,
 }
 
 if BG_pic == 0 then
