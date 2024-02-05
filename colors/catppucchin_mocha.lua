@@ -57,7 +57,7 @@ local colorscheme = {
       "#F2F2F2", -- white
    },
    tab_bar = {
-      background = "#000000",
+      background = mocha.crust,
       active_tab = {
          bg_color = mocha.surface2,
          fg_color = mocha.text,
