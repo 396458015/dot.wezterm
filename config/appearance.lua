@@ -18,6 +18,8 @@ if Darkness == 1 then
     colors.cursor_fg = "#303446"
     -- tab_bar底色
     colors.tab_bar.background = "#1e1e2e"
+    -- 字体颜色
+    colors.foreground = "#abb2bf"
     -- 背景底色
     -- colors.background = "#1f1f28"
 end
