@@ -7,11 +7,11 @@ M.separator_char = ' '
 
 M.colors = {
    date_fg = '#fab387',
-   date_bg = '#11111b', -- #181825
+   date_bg = '#1e1e2e', -- #181825
    battery_fg = '#00c473', -- #f9e2af #c0ff28 #139948
-   battery_bg = '#11111b', -- #181825
+   battery_bg = '#1e1e2e', -- #181825
    separator_fg = '#74c7ec',
-   separator_bg = '#11111b', -- #181825
+   separator_bg = '#1e1e2e', -- #181825
 }
 
 M.cells = {} -- wezterm FormatItems (ref: https://wezfurlong.org/wezterm/config/lua/wezterm/format.html)
