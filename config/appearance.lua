@@ -4,7 +4,7 @@ local BG_pic   = 0    -- 0: without pic, others: pic
 local Screen_width_ratio  = 0.85
 local Screen_height_ratio = 0.85
 local opacity_dark  = 0.90
-local opacity_light = 0.95
+local opacity_light = 1.00
 
 
 local theme = Darkness == 1 and "catppucchin_mocha" or "catppucchin_latte"
@@ -26,8 +26,13 @@ end
 
 -- 修改浅色主题对应的颜色
 if Darkness ~= 1 then
+    -- 光标
+    colors.cursor_bg = "#6c6f85"
+    colors.cursor_fg = "#eff1f5"
+    -- 背景底色
+    colors.background = "#eeeeee"
     -- tab_bar底色
-    colors.tab_bar.background = "#eff1f5"
+    colors.tab_bar.background = "#eeeeee"
 end
 
 local function setupTheme()
