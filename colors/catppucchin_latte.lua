@@ -50,7 +50,7 @@ local colorscheme = {
       "#767676", -- black
       "#E74856", -- red
       "#16C60C", -- green
-      "#F9F1A5", -- yellow
+      "#ff7a00", -- yellow
       "#3B78FF", -- blue
       "#B4009E", -- magenta/purple
       "#61D6D6", -- cyan
