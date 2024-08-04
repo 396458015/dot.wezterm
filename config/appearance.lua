@@ -82,7 +82,7 @@ local config = {
     show_tabs_in_tab_bar = true,
     show_new_tab_button_in_tab_bar = true,
     -- tab栏在底部
-    tab_bar_at_bottom = true,
+    tab_bar_at_bottom = false,
 
     hide_tab_bar_if_only_one_tab = false,
     use_fancy_tab_bar = false,
