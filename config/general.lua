@@ -1,7 +1,7 @@
 return {
    -- ENV
    set_environment_variables = {
-       WEZTERM = "true"
+       wezterm = "true"
      },
 
    -- behaviours
