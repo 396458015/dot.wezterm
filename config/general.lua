@@ -1,4 +1,9 @@
 return {
+   -- ENV
+   set_environment_variables = {
+       WEZTERM = "true"
+     },
+
    -- behaviours
    automatically_reload_config = true,
    check_for_updates = false,
